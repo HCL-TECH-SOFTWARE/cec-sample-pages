@@ -1,0 +1,95 @@
+{
+	"@desc": {
+		"entries": {
+			"title": "displayed title",
+			"link": "link to redirect to, defaults to #",
+			"target": "open link in target: _self, _top, _blank - defaults to self",
+			"bg": "a color code, if used, font face bold will be used, defaults to ffffff"
+		}
+	},
+	"entries": [
+		{
+			"title": "Executive",
+			"link": "/communities/service/html/communityoverview?communityUuid=<ExecutiveHandle>",
+			"target": "_blank",
+			"handle": "<ExecutiveHandle>",
+			"end": "#C10C0D",
+			"start": "#C95000"
+		},
+		{
+			"title": "Product Management",
+			"target": "_blank",
+			"link": "/communities/service/html/communityoverview?communityUuid=<ProductManagementHandle>",
+			"handle": "<ProductManagementHandle>",
+			"end": "#007744",
+			"start": "#8BA702"
+		},
+		{
+			"title": "Marketing",
+			"target": "_blank",
+			"link": "/communities/service/html/communityoverview?communityUuid=<MarketingHandle>",
+			"handle": "<MarketingHandle>",
+			"end": "#362284",
+			"start": "#789DF4",
+			"rotation": 45 
+		},
+		{
+			"title": "Support",
+			"target": "_blank",
+			"link": "/communities/service/html/communityoverview?communityUuid=<SupportHandle>",
+			"handle": "<SupportHandle>",
+			"end": "A00D0E",
+			"start": "AA157B"
+		},
+		{
+			"title": "Design",
+			"target": "_blank",
+			"link": "/communities/service/html/communityoverview?communityUuid=<DesignHandle>",
+			"handle": "<DesignHandle>",
+			"end": "73054E",
+			"start": "A9157C"
+		},
+		{
+			"title": "Development",
+			"target": "_blank",
+			"link": "/communities/service/html/communityoverview?communityUuid=<DevelopmentHandle>",
+			"handle": "<DevelopmentHandle>",
+			"end": "571B88",
+			"start": "9052BA"
+		},
+		{
+			"title": "Sales",
+			"target": "_blank",
+			"link": "/communities/service/html/communityoverview?communityUuid=<SalesHandle>",
+			"handle": "<SalesHandle>",
+			"end": "02559D",
+			"start": "0784CE"
+		},
+		{
+			"title": "Technical Hub",
+			"target": "_blank",
+			"link": "/communities/service/html/communityoverview?communityUuid=<TechHubHandle>",
+			"handle": "<TechHubHandle>",
+			"end": "026169",
+			"start": "018E94"
+		},
+		{
+			"title": "News",
+			"target": "_blank",
+			"link": "/communities/service/html/communityoverview?communityUuid=<NewsHandle>",
+			"handle": "<NewsHandle>",
+			"end": "73054E",
+			"start": "A9157C"
+		}
+	],
+	"disabledEntries": [
+		{
+			"title": "Client Advocacy",
+			"target": "_blank",
+			"link": "/communities/service/html/communityoverview?communityUuid=<ClientAdvocacyHandle>",
+			"handle": "<ClientAdvocacyHandle>",
+			"end": "526A01",
+			"start": "8AA605"
+		}
+	]
+}

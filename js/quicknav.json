@@ -1,0 +1,163 @@
+{
+	"@desc": {
+		"entries": {
+			"title": "displayed title",
+			"link": "link to redirect to, defaults to #",
+			"target": "open link in target: _self, _top, _blank - defaults to self",
+			"bg": "a color code, if used, font face bold will be used, defaults to ffffff"
+		}
+	},
+	"entries": [
+		{
+			"title": "Latest News",
+			"bg": "#DFE5CC",
+			"class": "latest-news",
+			"entries": [
+				{
+					"title": "Leader Blogs",
+					"link": "/xcc/main?page=leader-blogs"
+				},
+				{
+					"title": "Press Releases",
+					"link": "https://www.hcltechsw.com/news"
+				}
+			]
+		},
+		{
+			"title": "Strategy",
+			"bg": "#CDE5E7",
+			"class": "strategy",
+			"entries": [
+				{
+					"title": "Core Positioning",
+					"link": "/communities/service/html/communitystart?communityUuid=<UUID>"
+				},
+				{
+					"title": "Release Schedule",
+					"link": "https://www.hcltechsw.com/resources/product-release/search"
+				},
+				{
+					"title": "Roadmaps",
+					"link": "/communities/service/html/communityoverview?communityUuid=<UUID>#fullpageWidgetId=<WIDGET-ID>&folder=<FOLDER-ID>"
+				},
+				{
+					"title": "Enhancement Request Portal",
+					"link": "/wikis/home?lang=en#!/wiki/<WIKI-HANDLE>/page/Aha%20Enhancement%20Request%20Portals"
+				},
+				{
+					"title": "Product Positioning",
+					"link": "/communities/service/html/communityoverview?communityUuid=<UUID>#fullpageWidgetId=<WIDGET-ID>&folder=<FOLDER-ID>"
+				}
+			]
+		},
+		{
+			"title": "Products",
+			"bg": "#E4D8ED",
+			"class": "products",
+			"entries": [
+				{
+					"title": "Core Positioning",
+					"link": "/communities/service/html/communitystart?communityUuid=<UUID>"
+				}
+			]
+		},
+		{
+			"title": "Product Ideas Area",
+			"class": "products-inner",
+			"bg": "#E7D1E5",
+			"entries": [
+				{
+					"title": "Domino",
+					"link": "https://domino-ideas.hcltechsw.com"
+				},
+				{
+					"title": "Connections",
+					"link": "https://connections-ideas.hcltechsw.com/"
+				},
+				{
+					"title": "DX",
+					"link": "https://dx-ideas.hcltechsw.com/"
+				},
+				{
+					"title": "Volt MX",
+					"link": "https://volt-mx.hcltechsw.com/ideas"
+				}
+			]
+		},
+		{
+			"title": "People",
+			"class": "people",
+			"bg": "#CDE5E7",
+			"entries": [
+				{
+					"title": "About Us",
+					"link": "/blogs/<BLOG-HANDLE>"
+				}
+			]
+		},
+		{
+			"title": "Brand Center",
+			"class": "brand-center",
+			"bg": "#D5E0F2",
+			"entries": [
+				{
+					"title": "Brand Center",
+					"link": "/wikis/home?lang=en-gb#!/wiki/<WIKI-HANDLE>/page/Brand%20Center"
+				},
+				{
+					"title": "Usage",
+					"link": "/wikis/home?lang=en-gb#!/wiki/<WIKI-HANDLE>/page/Usage"
+				},
+				{
+					"title": "Logos",
+					"link": "/wikis/home?lang=en-gb#!/wiki/<WIKI-HANDLE>/page/Logos"
+				},
+				{
+					"title": "Design Files",
+					"link": "/wikis/home?lang=en-gb#!/wiki/<WIKI-HANDLE>/page/Design%20Files"
+				},
+				{
+					"title": "Guideline Links",
+					"link": "/wikis/home?lang=en-gb#!/wiki/<WIKI-HANDLE>/page/Guideline"
+				}
+			]
+		},
+		{
+			"title": "My Communities",
+			"class": "employee-support",
+			"bg": "#E8D2E1",
+			"link": "/communities/service/html/ownedcommunities"
+		},
+		{
+			"title": "Lost and Found",
+			"class": "lost-and-found",
+			"bg": "#CE8B68",
+			"entries": [
+				{
+					"title": "Global Claims System"
+				},
+				{
+					"title": "HCL Benefits Choices"
+				},
+				{
+					"title": "HCL e-mail"
+				},
+				{
+					"title": "IT Self Service"
+				},
+				{
+					"title": "Leave Management - GEO"
+				},
+				{
+					"title": "My Profile HCL"
+				},
+				{
+					"title": "My Travel"
+				},
+				{
+					"title": "Skill Profile"
+				}
+			]
+		}
+	]
+}

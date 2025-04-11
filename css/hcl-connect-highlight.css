@@ -1,0 +1,122 @@
+/* ======================================================================== *
+ * Copyright 2025 HCL America Inc.                                          *
+ * Licensed under the Apache License, Version 2.0 (the "License");          *
+ * you may not use this file except in compliance with the License.         *
+ * You may obtain a copy of the License at                                  *
+ *                                                                          *
+ * http://www.apache.org/licenses/LICENSE-2.0                               *
+ *                                                                          *
+ * Unless required by applicable law or agreed to in writing, software      *
+ * distributed under the License is distributed on an "AS IS" BASIS,        *
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. *
+ * See the License for the specific language governing permissions and      *
+ * limitations under the License.                                           *
+ * ======================================================================== */
+
+ /* ************************************************************************ */
+/* Highlight Widgets                                                        */
+/* ************************************************************************ */
+[data-wname$="Highlight" i] .wbody .xccTopNews .xccEntry
+{
+	display: grid;
+	grid-template-areas:
+        'hl-post-image hl-post-teaser hl-post-dynamic';
+	grid-template-columns: 2fr 1fr 1fr;
+	row-gap: var(--hclc-grid-row-gap);
+	column-gap: var(--hclc-grid-column-gap);
+}
+
+
+[data-wname$="Highlight" i] .wbody .xccTopNews .xccEntry 
+{
+	min-height: 10px;
+	max-width: unset;
+	margin-right: 0 !important;
+	width: 100% !important;
+}
+
+[data-wname$="Highlight" i] .wbody .xccTopNews .xccEntry.clearfix:before,
+[data-wname$="Highlight" i] .wbody .xccTopNews .xccEntry .clearfix:before
+{
+	display: none;
+}
+
+/* Hide teaser text in overview */
+[data-wname$="Highlight" i] .wbody .xccTopNews .xccEntry .topNewsContainer
+{
+    grid-area: hl-post-image;
+	display: contents;
+	width: auto;
+}
+
+[data-wname$="Highlight" i] .wbody .xccTopNews .xccEntry .topNewsContainer img
+{
+	height: 100%;
+    overflow: hidden;
+    display: block;
+    object-fit: cover;
+}
+
+[data-wname$="Highlight" i] .wbody .xccTopNews .xccEntry .topNewsContent
+{
+	grid-area: hl-post-teaser;
+	width: auto;
+	display: block;
+	background-color: #fff;
+	padding: 0 !important;
+	display: grid;
+	grid-template-areas: 'teaser-headline'
+		'teaser-text'
+		'teaser-category';
+	grid-template-rows: min-content auto 2.8em;
+    grid-auto-rows: max-content;
+    min-height: 30em;
+}
+.xccstyle #lotusContent [data-wname$="Highlight" i] .wbody .xccTopNews .xccEntry .topNewsContent .xccHeadline
+{
+	grid-area: teaser-headline;
+	margin: 0;
+	padding: 1em;
+}
+
+.xccstyle #lotusContent [data-wname$="Highlight" i] .wbody .xccTopNews .xccEntry .topNewsContent .topNewsTeaser
+{
+	grid-area: teaser-text;
+	margin: 0;
+	padding: 1em;
+}
+
+.xccstyle #lotusContent [data-wname$="Highlight" i] .wbody .xccTopNews .xccEntry .entry
+{
+	grid-area: teaser-category;
+	align-self: end;
+	margin: 0 0 1em 0.4em;
+}
+.xccstyle #lotusContent [data-wname$="Highlight" i] .wbody .xccTopNews .xccEntry .entry .label
+{
+	font-weight: normal;
+}
+
+.xccstyle #lotusContent [data-wname$="Highlight" i] .wbody .xccTopNews .xccEntry .topNewsContent .xccHeadline,
+.xccstyle #lotusContent [data-wname$="Highlight" i] .wbody .xccTopNews .xccEntry .topNewsContent .xccHeadline a,
+.xccstyle #lotusContent [data-wname$="Highlight" i] .wbody .xccTopNews .xccEntry .topNewsContent .xccHeadline a:hover,
+.xccstyle #lotusContent [data-wname$="Highlight" i] .wbody .xccTopNews .xccEntry .topNewsContent .xccHeadline a:visited,
+.xccstyle #lotusContent [data-wname$="Highlight" i] .wbody .xccTopNews .xccEntry .topNewsContent .xccHeadline a:active,
+.xccstyle #lotusContent [data-wname$="Highlight" i] .wbody .xccTopNews .xccEntry .topNewsContent .xccHeadline a:focus
+{
+	font-weight: bold !important;
+	color: #000 !important;
+	line-height: 1.2em;
+    font-size: 124% !important;
+}
+
+
+
+[data-wname$="Highlight" i] .wbody .xccTopNews .xccEntry .topNewsContent .xccTimestamp
+{
+	display: none;
+}
+
+/* ************************************************************************ */
+/* END Highlight Widgets                                                    */
+/* ************************************************************************ */

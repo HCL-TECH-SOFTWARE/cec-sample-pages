@@ -1,0 +1,117 @@
+/* ======================================================================== *
+ * Copyright 2025 HCL America Inc.                                          *
+ * Licensed under the Apache License, Version 2.0 (the "License");          *
+ * you may not use this file except in compliance with the License.         *
+ * You may obtain a copy of the License at                                  *
+ *                                                                          *
+ * http://www.apache.org/licenses/LICENSE-2.0                               *
+ *                                                                          *
+ * Unless required by applicable law or agreed to in writing, software      *
+ * distributed under the License is distributed on an "AS IS" BASIS,        *
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. *
+ * See the License for the specific language governing permissions and      *
+ * limitations under the License.                                           *
+ * ======================================================================== */
+
+/* ************************************************************************ */
+/* Spotlight Widgets                                                        */
+/* ************************************************************************ */
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview
+{
+	display: grid;
+	grid-template-areas:
+        'sl-post-00 sl-post-01 sl-post-02 sl-post-03'
+        'sl-post-04 sl-post-05 sl-post-06 sl-post-07';
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	row-gap: var(--hclc-grid-row-gap);
+	column-gap: var(--hclc-grid-column-gap);
+}
+
+
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview > div[data-id^="post"]
+{
+	min-height: 10px;
+	max-width: unset;
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+	width: 100% !important;
+}
+
+/* Hide teaser text in overview */
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview .xccEntry .newsOverviewTeaser
+{
+    display: none;
+}
+
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post00"]
+{
+	grid-area: sl-post-00;
+}
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post01"]
+{
+	grid-area: sl-post-01;
+}
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post02"]
+{
+	grid-area: sl-post-02;
+}
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post03"]
+{
+	grid-area: sl-post-03;
+}
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post04"]
+{
+	grid-area: sl-post-04;
+}
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post05"]
+{
+	grid-area: sl-post-05;
+}
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post06"]
+{
+	grid-area: sl-post-06;
+}
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post07"]
+{
+	grid-area: sl-post-07;
+}
+
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post00"] .xccEntry,
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post01"] .xccEntry,
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post02"] .xccEntry,
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post03"] .xccEntry,
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post04"] .xccEntry,
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post05"] .xccEntry,
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post06"] .xccEntry,
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post07"] .xccEntry,
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post08"] .xccEntry,
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post09"] .xccEntry
+{
+	grid-template-rows: auto 1fr 2.5em;
+	height: 100%;
+}
+
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post00"] .xccHeadline,
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post01"] .xccHeadline,
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post02"] .xccHeadline,
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post03"] .xccHeadline,
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post04"] .xccHeadline,
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post05"] .xccHeadline,
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post06"] .xccHeadline,
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post07"] .xccHeadline,
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post08"] .xccHeadline,
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview [data-id="post09"] .xccHeadline
+{
+	zoom: 1.2;
+}
+
+/* display no more than 8 entries */
+[data-wname$="Spotlight" i] .wbody .xccNewsOverview div:nth-child(1n+9)
+{
+	display: none;
+}
+
+/* ************************************************************************ */
+/* END Spotlight Widgets                                                    */
+/* ************************************************************************ */
